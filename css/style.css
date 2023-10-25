@@ -4,6 +4,10 @@ Reset
 ******
 */
 
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 /*
 ******
 Typography
@@ -22,6 +26,12 @@ Common
 ******
 */
 
+:root {
+  --campanella: #ff8f00;
+  --bluejumbo: #1b72e8;
+  --white: #ffffff;
+}
+
 /*
 ******
 Body
@@ -33,6 +43,18 @@ Body
 Header
 ******
 */
+
+header {
+  height: 100px;
+}
+
+header .fa-bell {
+  color: var(--campanella);
+}
+
+nav {
+  background-color: var(--white);
+}
 
 /*
 ******

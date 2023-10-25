@@ -43,10 +43,114 @@
   </head>
 
   <body>
-    <header></header>
+    <header class="fixed-top">
+      <nav class="navbar fixed-top py-3">
+        <div class="container-fluid">
+          <!-- Colonna Sinistra con Logo Boolean -->
+          <div class="col-2 col-md-1 col-lg-2 col-xxl-1">
+            <!-- Logo Boolean dimensione Mobile -->
+            <img
+              src="img/mobile-logo.png"
+              alt="Logo"
+              width="50px"
+              height="50px"
+              class="align-text-top d-lg-none"
+            />
+            <!-- Logo Boolean dimensione Desktop -->
+
+            <img
+              src="img/logo.svg"
+              alt="Logo"
+              class="align-text-top d-none d-lg-block"
+            />
+             </div>
+            <!-- Colonna centrale -->
+            <div class="col-8 col-md-10 col-lg-8 col-xxl-10">
+              <!-- Barra lezioni di lavarel -->
+              <div class="input-group">
+              <span class="input-group-text border-end-0 bg-body-secondary">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control bg-body-secondary border-start-0"
+                  id="floatingInputGroup1"
+                  placeholder="Username"
+                />
+                <label for="floatingInputGroup1"
+                  >Prova a cercare: Lezioni di Laravel</label
+                >
+              </div>
+            </div>
+            </div>
+            <!-- Colonna destra -->
+            <div
+            class="col-2 col-md-1 col-lg-2 col-xxl-1 d-flex align-items-center justify-content-around"
+          >
+          <!-- Inserimento Icone Font Awesome -->
+           <i class="fa-solid fa-list-ul d-none d-lg-block"></i>
+            <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
+            <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
+            <!-- Inserimento Campanella Nav -->
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bell"></i>
+            </button>
+            <!-- Menu a scomparsa modalità Mobile -->
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Profilo</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Fatturazione</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Logout</a
+                    >
+                  </li>
+                    </ul>
+                  </li>
+                </ul>
+          </div>
+          </div>
+        </div>
+        </div>
+      </nav>
+    </header>
 
     <main>
-      <div class="accordion" id="accordionExample">
+
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- /Bootstrap JS -->
+  </body>
+  <footer>
+           <!-- <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button
@@ -124,16 +228,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </div> -->
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <!-- /Bootstrap JS -->
-  </body>
-  <footer></footer>
+
+  </footer>
 </html>
