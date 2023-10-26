@@ -57,6 +57,10 @@ nav {
   background-color: var(--white);
 }
 
+span {
+  font-weight: normal;
+}
+
 /*
 ******
 Main
@@ -74,6 +78,27 @@ Main
 #side-nav i span {
   font-size: 12px;
   font-weight: normal;
+}
+
+/*
+******
+Jumbotrone
+******
+*/
+
+.jq-bottone-jumbo {
+  padding: 0 10px;
+  background-color: #165bba;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.jumbotrone {
+  background-color: var(--bluejumbo);
+}
+
+.btn {
+  background-color: var(--bluejumbo);
 }
 
 /*
