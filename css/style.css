@@ -30,6 +30,7 @@ Common
   --campanella: #ff8f00;
   --bluejumbo: #1b72e8;
   --white: #ffffff;
+  --sidenavback: #051e34;
 }
 
 /*
@@ -61,6 +62,19 @@ nav {
 Main
 ******
 */
+
+#side-nav {
+  background-image: url(/img/sidebar-bg.png);
+  background-color: var(--sidenavback);
+  color: var(--white);
+  height: calc(100vh - 100px);
+  margin-top: 100px;
+}
+
+#side-nav i span {
+  font-size: 12px;
+  font-weight: normal;
+}
 
 /*
 ******
